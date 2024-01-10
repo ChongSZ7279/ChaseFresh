@@ -1,0 +1,77 @@
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Set background color to white */
+  }
+  
+  .cover-title {
+    font-size: 12rem;
+    color: black; /* Set text color to black */
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.cover-text {
+    padding: 1.5rem;
+    text-align: left;
+    color: black; /* Set text color to black */
+  }
+  
+  .cover-text h1 {
+    margin-top: -2rem; /* Adjust the margin between h1 and p */
+    margin-bottom: 0rem;
+    font-size: 4rem;
+  }
+
+  .cover-text p {
+    margin-top: 0rem; /* Adjust the margin between h1 and p */
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .cover-title {
+      font-size: 8rem;
+    }
+    .cover-text h1 {
+      font-size: 3rem;
+    }
+    .cover-text p {
+      font-size: 1.5rem;
+    }
+    
+  }
+
+  
+  @media screen and (max-width: 888px) {
+    .cover-title {
+      font-size: 12rem;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    .cover-title {
+        font-size: 10rem;
+        padding: 0rem;
+    }
+    .cover-text{
+        padding: 1rem;
+    }
+    .cover-text h1 {
+        margin-top: -3.5rem; 
+    }
+    .cover-text p {
+      font-size: 1rem;
+    }
+    
+  }
+
+  
+  @media screen and (max-width: 1100px) {
+    .cover-text {
+      font-size: 2rem;
+    }
+  }

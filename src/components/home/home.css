@@ -1,0 +1,215 @@
+
+.date-container {
+    color: var(--color-white-seven);
+    margin-bottom: 1rem;
+}
+.date-container p{
+    font-size: 2rem;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-buttons{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.calendar{
+    padding: 0.5rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-white-seven);
+}
+
+.calendar-row {
+    display: grid;
+    grid-template-columns: repeat(7, 2.8rem);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.month-name{
+    font-size: 2rem;
+    color: var(--color-white-seven);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-day {
+    text-align: center;
+    padding: 0rem;
+    border: 1px solid var(--color-white-seven);
+    color: var(--color-white);
+    width: 3rem;
+}
+
+.calendar-no {
+    text-align: center;
+    padding: 0rem;
+    border: none;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    width: 3rem;
+}
+
+.today {
+    color: var(--color-red);
+}
+
+.current-month {
+background-color: #c1c1c1;
+}
+
+.other-month {
+color: #ccc;
+}
+
+.overdue h3{
+    font-size: 2rem;
+    color: var(--color-red);
+}
+
+.less-than-7days h3{
+    font-size: 2rem;
+    color: var(--color-orange);
+}
+
+.less-than-1month h3{
+    font-size: 2rem;
+    color: var(--color-yellow);
+}
+
+.more-than-1month h3{
+    font-size: 2rem;
+    color: var(--color-green);
+}
+
+.done h2{
+    font-size: 2rem;
+    color: var(--color-white-seven);
+}
+.listing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.listing h3 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: -2rem; /* Add margin for spacing */
+}
+
+.listed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white-seven);
+    padding: 2rem;
+    border-radius: 2%;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.list-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.list-num{
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 2rem 0.5rem 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    display: flex; ;
+    justify-content: center;
+    align-items: center;
+}
+.list-title th{
+    text-align: left;
+    margin-right: 1rem;
+}
+.list-buttons{
+    display: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+}
+
+.list-button-done{
+    background-color: var(--color-green);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 5rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+.list-button-done:hover{
+    background-color: var(--color-white-five);
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+}
+
+.list-button-delete{
+    background-color: var(--color-red);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 5rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+.list-button-delete:hover{
+    background-color: var(--color-white-five);
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+}
+
+.list-button-edit{
+    background-color: var(--color-yellow);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 5rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+.list-button-edit:hover{
+    background-color: var(--color-white-five);
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+}
+
+.listed{
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}

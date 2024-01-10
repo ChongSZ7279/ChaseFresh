@@ -1,13 +1,150 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --color-black: #1d1d1d;
+  --color-black-seven: #1d1d1d70;
+  --color-black-five: #1d1d1d50;
+
+  --color-white: #f6f6f6;
+  --color-white-seven: #f6f6f670;
+  --color-white-five: #f6f6f650;
+  --color-white-box: #d9d9d9;
+
+  --color-red: #ff0000;
+  --color-orange: #ff7f00;
+  --color-yellow: #ffff00;
+  --color-green: #00ff00;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inknut Antiqua', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-black);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+section{
+  margin-top: 8rem;
+}
+section>h2{
+  text-align: left;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+a{
+  color: var(--color-white);
+}
+.grey-container{
+  background-color: var(--color-white-seven);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  border-radius: 1rem;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submit-button{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 5rem;
+  height: 3rem;
+  display: inline-block;
+}
+
+.submit-button:hover{
+  background-color: var(--color-white-five);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0.5rem;
+}
+.title{
+  font-size: 3rem;
+  margin-top: 0rem;
+  color: var(--color-white);
+}
+h1{
+  font-size: 3rem;
+}
+input,
+select{
+  border: none;
+  outline: none;
+  background-color: var(--color-white-box);
+  width: var(--container-width-sm);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+select{
+  color: var(--color-black-seven);
+  width: 20rem;
+}
+p{
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 1024px){
+  section{
+    margin-top: 6rem;
+  }
 }
